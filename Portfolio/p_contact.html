@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<title>Contact</title>
+	<style type="text/css">
+
+	.bgcontainer{
+			display: flex;
+			height: 625px;
+			background-image: linear-gradient(black 40%, #0eede2 );
+			background-size: 100% 100%;
+
+		}
+		
+	
+		.container{
+			
+			width: 900px;
+			height: 500px;
+			box-shadow: 20px 20px 20px black;
+			background-color:#0c0c0d;
+			margin: auto;
+			border-radius: 30px;
+			color: white;
+			position: relative;
+        }
+        
+        
+        main{
+        	display:flex; 
+        	
+        }
+        .one{
+        	height: 38%;
+        	width: 40%;
+        	margin-left: 50px;
+        }
+        .two{
+        	margin-right: 100px;
+		
+        }
+		
+        img{
+        	height: 90px;
+        	width: 400px;
+        }
+        form{
+        	align-content: center;
+
+        }
+        input,
+textarea {
+    background-color: #4e4f52; /* Light gray background color */
+    border: 2px solid #ccc; /* Light gray border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input/textarea */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size for readability */
+/*    box-sizing: border-box; /* Includes padding and border in element’s total width and height */*/
+    width: 50%; /* Full width of the container */
+    margin-bottom: 7px; /* Space below each input/textarea */
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Placeholder text color */
+    font-style: italic; /* Italic style for placeholder text */
+}
+
+/* Specific styling for textarea */
+
+
+/* Example styling for focus state */
+input:focus,
+textarea:focus {
+    border-color: #0eede2; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+button{
+	border-radius: 10px;
+	height:35px;
+	width: 73px;
+	background-color:#0eede2 ;
+	transition:0.3s;
+	
+}
+button:hover{
+	background-color: white;
+	color: black;
+	height:38px;
+	width: 76px;
+	transform:0.3s;
+
+}
+header{
+			padding: 20px;
+			
+			text-align: right;
+			align-items: right;
+			justify-content: right;
+			word-spacing: 20px;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+		a:hover{
+			color:  #0eede2;
+			transform: 0.3s;
+			font-size: 20px;
+		}
+		#contact{
+			color: #0eede2;
+			font-size: 20px;
+
+		}
+		body {
+            font-family: 'Poppins' , sans-serif;
+            font-style: italic;
+        }
+        hr{
+        	margin-left: 50px;
+        	margin-right: 50px;
+        }
+
+ 
+
+
+	</style>
+</head>
+<body>
+	 <div class="bgcontainer">
+
+	<div class="container">
+		<header>
+
+		<b><a   href="index.html" target="_parent">Home</a></b>
+		<b><a  href="p_about.html" target="_parent">About</a></b>
+		<b><a href="p_skills.html" target="_parent">Skills</a></b>
+		<b><a  id="contact"href="p_contact.html" target="_parent">Contact</a></b>
+		</header>
+		<main>
+				<div class="one">
+					<img src="contact.png">
+				</div><hr>
+				<div class="two">
+
+  
+   					 <p><i class="fas fa-map-marker-alt"></i> Location: Nashik, Maharashtra</p>
+   					
+   					 <p><i class="fas fa-envelope"></i> Email: shrutimore711@gmail.com</p>
+				</div>
+
+		</main>
+		<hr><br>
+		<div class="message">
+		<center><form action="https://formspree.io/f/mvgpnrvp" method="POST">
+		<input type="text" name="Name" placeholder="Full Name" required>
+		<input type="email" name="Email" placeholder="Email Address" required><br>
+		<input type="tel" name="Number" placeholder="Mobile Number"  maxlength="10" required>
+		<input type="text" name=" Email Subject" placeholder="Email Subject" required><br>
+		<textarea  name="message" cols="45" rows="4" placeholder="Your Message" required></textarea>
+		</center>
+		</div>
+		<center><button>Send</button></center>
+	</form>
+		
+		
+
+
+
+		</div>
+	
+</div>
+
+
+</body>
+</html>
